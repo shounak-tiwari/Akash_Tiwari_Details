@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Tiwari | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Akash<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+        <button class="icon-btn burger" id="burgerBtn" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="pill">Trainer • MCA • Full Stack</p>
+        <h1>Hi, I'm <span class="grad">Akash Tiwari</span></h1>
+        <p class="subtitle">
+          I build web apps with <b>Django</b>, <b>React</b>, and create training-friendly projects.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Hire / Collaborate</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><b>6+</b><span>Modules Taught</span></div>
+          <div class="stat"><b>50+</b><span>Practice Tasks</span></div>
+          <div class="stat"><b>10+</b><span>Mini Projects</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="avatar" aria-hidden="true">AT</div>
+        <h3>Full Stack Developer</h3>
+        <p>React • Django • SQL • Python</p>
+        <div class="hero-tags">
+          <span class="tag">Industrial Training</span>
+          <span class="tag">MERN Ready</span>
+          <span class="tag">ML Basics</span>
+        </div>
+        <a class="btn small" href="#" id="downloadBtn">Download Resume</a>
+        <small class="muted">Tip: Replace resume link in JS.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="section-desc">
+        I'm an MCA student and a trainer at Universal Informatics (Indore). I enjoy building real-world
+        projects and teaching students with clear, practical examples.
+      </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>What I do</h3>
+          <ul class="list">
+            <li>Web Development (React + Django)</li>
+            <li>Database (MySQL / SQL)</li>
+            <li>Project-based Training</li>
+            <li>Basics of ML with Python</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Highlights</h3>
+          <ul class="list">
+            <li>Build training projects with admin panels</li>
+            <li>Clean UI + responsive layouts</li>
+            <li>Reusable components and APIs</li>
+            <li>Focus on industry-ready skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-desc">A quick overview of my technical stack.</p>
+
+      <div class="skills-grid">
+        <div class="skill card">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Bootstrap</span>
+          </div>
+          <div class="bar"><div style="width: 90%"></div></div>
+          <small class="muted">UI + responsive design</small>
+        </div>
+
+        <div class="skill card">
+          <h3>Backend</h3>
+          <div class="chips">
+            <span>Python</span><span>Django</span><span>REST API</span>
+          </div>
+          <div class="bar"><div style="width: 85%"></div></div>
+          <small class="muted">APIs, auth, admin panels</small>
+        </div>
+
+        <div class="skill card">
+          <h3>Database & Tools</h3>
+          <div class="chips">
+            <span>MySQL</span><span>SQL</span><span>Git</span><span>VS Code</span>
+          </div>
+          <div class="bar"><div style="width: 80%"></div></div>
+          <small class="muted">Queries, joins, version control</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="projects-head">
+        <div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">Some of my practice & training-style projects.</p>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="django">Django</button>
+          <button class="filter" data-filter="react">React</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectGrid">
+        <article class="project card" data-type="django web">
+          <h3>Institute Inquiry Landing Page</h3>
+          <p>Inquiry form + admin panel + SQL database integration.</p>
+          <div class="project-meta">
+            <span class="tag">Django</span><span class="tag">SQL</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small ghost" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="project card" data-type="react web">
+          <h3>Student Dashboard</h3>
+          <p>CRUD UI with search, filters, and reusable components.</p>
+          <div class="project-meta">
+            <span class="tag">React</span><span class="tag">UI</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small ghost" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="project card" data-type="web">
+          <h3>Portfolio Template</h3>
+          <p>Responsive portfolio with dark mode & smooth scrolling.</p>
+          <div class="project-meta">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small ghost" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="project card" data-type="django">
+          <h3>REST API Starter</h3>
+          <p>Django REST API with authentication + basic endpoints.</p>
+          <div class="project-meta">
+            <span class="tag">Django</span><span class="tag">API</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small ghost" href="#">Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-desc">Send me a message. Form includes basic validation.</p>
+
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Details</h3>
+          <p class="muted">Replace these with your real links.</p>
+          <div class="contact-list">
+            <div><b>Email:</b> akash@example.com</div>
+            <div><b>Phone:</b> +91 XXXXXXXXXX</div>
+            <div><b>Location:</b> Indore, India</div>
+          </div>
+          <div class="social">
+            <a href="#" class="btn small ghost">LinkedIn</a>
+            <a href="#" class="btn small ghost">GitHub</a>
+          </div>
+        </div>
+
+        <form class="card" id="contactForm" novalidate>
+          <div class="row">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+            <small class="error" id="nameErr"></small>
+          </div>
+
+          <div class="row">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="you@email.com" required />
+            <small class="error" id="emailErr"></small>
+          </div>
+
+          <div class="row">
+            <label>Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+            <small class="error" id="msgErr"></small>
+          </div>
+
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="muted" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Akash Tiwari. All rights reserved.</p>
+      <a href="#home" class="btn small ghost">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
